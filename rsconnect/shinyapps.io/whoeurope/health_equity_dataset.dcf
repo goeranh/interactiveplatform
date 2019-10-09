@@ -1,0 +1,12 @@
+name: health_equity_dataset
+title:
+username:
+account: whoeurope
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 958781
+bundleId: 2484658
+url: https://whoeurope.shinyapps.io/health_equity_dataset/
+when: 1570640442.5316
+asMultiple: FALSE
+asStatic: FALSE

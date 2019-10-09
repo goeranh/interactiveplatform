@@ -1,0 +1,111 @@
+﻿<!--
+© Copyright World Health Organization (WHO) 2016-2019.
+This file is part of the Health Equity Assessment Toolkit Plus (HEAT Plus).
+HEAT is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License Version 2 as published by the
+Free Software Foundation.
+
+HEAT Plus is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with HEAT Plus. If not, see http://www.gnu.org/licenses/.
+-->
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip({ "placement": "right" });
+  });
+</script>
+
+<div id="backimg-upload">
+  <div class="row belowbars">
+    <div class="row belowbars">
+      <div class="col-xs-8 col-xs-offset-2 text-center">
+        <div class="jumbotron welltrans">
+				<img class="logo-main" src="logomain.jpg" />
+				<h1 class="home-title landing">The Health Equity Dataset</h1><p>of the</p>
+				<h2 class="home-title landing">WHO European Health Equity Status Report Initiative (HESRi) </h2>
+				<p>An interactive platform based on the Health Equity Assessment Toolkit Plus (HEAT Plus)</p>
+
+
+    			<!-- <h2 id="heat_plus_landing_title" class="landing shiny-text-output">
+    			  {{ translate("heat_plus_landing_title", "english") }}
+    			</h2>
+  				<h2 class="landing">({{ translationOutput("heat_plus_landing_acronym", class = "subhead") }})</h2>
+          <p id="heat_plus_landing_subtitle" class="lead shiny-text-output">{{ translate("heat_plus_landing_subtitle", "english") }}
+          </p>-->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="col-sm-12" id = "download-well">
+          <div class="well col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+  					{{ busyindicator }}
+						<h4 style="display:none;" class="text-center">
+						  <strong id="heat_plus_landing_db_intro" class="shiny-html-output">
+						    {{ translate("heat_plus_landing_db_intro", "english") }}
+					    </strong>
+						</h4>
+
+						<div style="display:none;" class="row">
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-4">
+								<div id="neworexisting" class="form-group shiny-input-radiogroup shiny-input-container">
+  								<label class="control-label" for="neworexisting"></label>
+
+  								<div class="shiny-options-group control-group">
+  									<label class="radio control control-radio">
+  										<input type="radio" name="neworexisting" value="newdata">
+  										<span class="control-text">
+  										  <span id="heat_plus_landing_db_upload" class="shiny-text-output">{{ translate("heat_plus_landing_db_upload", "english") }}</span>
+  										</span>
+  										<div class="control__indicator"></div>
+  									</label>
+
+  									<label class="radio control control-radio">
+  										<input type="radio" name="neworexisting" value="existdata" checked="checked">
+  										<span class="control-text">
+  										  <span id="heat_plus_landing_db_open" class="shiny-text-output">{{ translate("heat_plus_landing_db_open", "english") }}</span>
+  								    </span>
+  										<div class="control__indicator"></div>
+  									</label>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+
+  					<div style="display:none;" id="upload-browse">
+  						{{ heat_plus_upload_new_db }}
+  						{{ heat_plus_select_existing_db }}
+  					</div>
+
+            <div style="display:none;" class="text-center" >
+              <button id="doUploadBtn" type="button" class="btn btn-primary action-button btn-lg" disabled>{{ translate("heat_plus_landing_db_upload", "english") }}</button>
+            </div>
+
+  					<div id="table_result" class="shiny-html-output text-center"></div>
+  					<div class="shiny-html-output text-center">{{ button_go_to_compare }}</div>
+					<div class="shiny-html-output text-center"><br>This Health Equity Dataset interactive platform allows users to explore the indicators underlying the <a href="http://www.euro.who.int/en/publications/abstracts/health-equity-status-report-2019 " target="_blank">WHO European Health Equity Status Report</a> and accompanying <a href="http://www.euro.who.int/en/health-topics/health-determinants/social-determinants/health-equity-status-report-initiative" target="_blank">HESRi companion tools</a>.<br> It enables the monitoring and analysis of within-country inequities in<br>(a) health indicators, and (b) indicators of essential underlying conditions and policies falling under five policy action areas. It includes indicators disaggregated by sex, age, socioeconomic status, and geographical region.</div>
+
+  				</div>
+  			</div>
+
+        <!-- <div class="col-sm-12 text-center">
+          {{ translationOutput("heat_plus_landing_citation", html = TRUE) }}
+		  <p class="footer-who col-sm-5">
+			WHO European Office for Investment for Health and Development<br>
+			Ospedale Ss. Giovanni e Paolo, Castello 6777, 30122 Venice, Italy<br>
+			Tel.: +39 041 279 3865     E-mail: whovenice@who.int
+		  </p>
+		  <p class="footer-humco col-sm-5 col-sm-offset-2">
+			Humco s.r.l. - COGNITIVE INTEGRATOR<br>
+			Via Giovanni Felisati 61 30171 Venice, Italy<br>
+			Tel.: +39 041 0999696 / E-mail: info@humco.it
+		  </p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
