@@ -1,4 +1,4 @@
-# HESRi Health Equity Dataset - Version 1.1
+# The Health Equity Dataset of the WHO European Health Equity Status Report Initiative (HESRi) - Version 1.1
 
 This Health Equity Dataset interactive platform allows users to explore the indicators underlying the WHO European Health Equity Status Report and accompanying HESRi companion tools.
 It enables the monitoring and analysis of within-country inequities in
